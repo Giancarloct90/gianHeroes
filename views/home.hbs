@@ -1,0 +1,25 @@
+<div class="container">
+
+    <div class="row justify-content-center">
+        <br>
+        {{#each heroesDB}}
+
+        <div class="card col-ms-4 borderr" style="width: 18rem; margin: 20px;">
+            <img src="{{this.img}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{this.nombre}}</h5>
+                <p class="card-text">{{this.bio}}</p>
+                <h5 class="card-title">{{this.aparicion}}</h5>
+                <h5 class="card-title">{{this.casa}}</h5>
+                {{!-- <div class="row">
+                    <div class="col-sm-12">
+                    </div>
+                </div> --}}
+
+                <a href="/heroesD/{{this.id}}" class="btn btn-danger" style="width: inherit;">Borrar</a>
+                <a href="/heroesGetOne/{{this.id}}" class="btn btn-primary">Actulizar</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
