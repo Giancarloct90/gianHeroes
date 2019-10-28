@@ -1,3 +1,17 @@
+<style>
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+</style>
 <div class="container">
     <div class="row">
         <div class="col-md-12 card borderr" style="padding: 50px; margin-bottom: 50px;">
@@ -26,6 +40,32 @@
                 mas segura. Estan siendo almacenadas en Cloudinary, un servicio en la nube para el almacenamiento de
                 imagenes con gran capacidad.
             </p>
+            <br>
+            <h1 class="text-center">Tecnologias</h1>
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {{!-- <div class="swiper-slide">Slide 1</div> --}}
+                    <img src="asset/nodejs.jpg" class="swiper-slide" alt="">
+                    <img src="asset/boots.png" class="swiper-slide" alt="">
+                    <img src="asset/css4.png" class="swiper-slide" alt="">
+                    <img src="asset/handle.png" class="swiper-slide" alt="">
+                    <img src="asset/mongodb.png" class="swiper-slide" alt="">
+                    <img src="asset/nodejs2.png" class="swiper-slide" alt="">
+                    <img src="asset/nodejs3.png" class="swiper-slide" alt="">
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                {{!-- 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div> --}}
+            </div>
         </div>
     </div>
 </div>
